@@ -8,13 +8,17 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>新文章 | myBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="文章可以拥有如下属性：Setting    Description    Defaultlayout    Layout    post或pagetitle    文章的标题  testdate    创建日期    文件的创建日期updated    修改日期    文件的修改日期">
+<meta name="keywords" content="随笔">
+<meta property="og:type" content="article">
 <meta property="og:title" content="新文章">
 <meta property="og:url" content="http://yoursite.com/2017/11/15/新文章/index.html">
 <meta property="og:site_name" content="myBlog">
-<meta property="og:updated_time" content="2017-11-15T02:10:16.824Z">
+<meta property="og:description" content="文章可以拥有如下属性：Setting    Description    Defaultlayout    Layout    post或pagetitle    文章的标题  testdate    创建日期    文件的创建日期updated    修改日期    文件的修改日期">
+<meta property="og:updated_time" content="2017-11-15T06:19:37.551Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="新文章">
+<meta name="twitter:description" content="文章可以拥有如下属性：Setting    Description    Defaultlayout    Layout    post或pagetitle    文章的标题  testdate    创建日期    文件的创建日期updated    修改日期    文件的修改日期">
   
     <link rel="alternative" href="/atom.xml" title="myBlog" type="application/atom+xml">
   
@@ -55,7 +59,11 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/tags/随笔">随笔</a></li>
+	        
+				<li><a href="/categories/日记">日记</a></li>
+	        
+				<li><a href="/categories/技术">技术</a></li>
 	        
 			</ul>
 		</nav>
@@ -113,6 +121,10 @@
 			
 				
 			
+				
+			
+				
+			
 			
 			
 			<nav class="header-nav">
@@ -130,12 +142,16 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 25%"><a href="/tags/随笔">随笔</a></li>
+		        
+					<li style="width: 25%"><a href="/categories/日记">日记</a></li>
+		        
+					<li style="width: 25%"><a href="/categories/技术">技术</a></li>
 		        
 				</ul>
 			</nav>
@@ -170,7 +186,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <p>文章可以拥有如下属性：<br>Setting    Description    Default<br>layout    Layout    post或page<br>title    文章的标题</p>
+<blockquote>
+<p>test<br>date    创建日期    文件的创建日期<br>updated    修改日期    文件的修改日期<br><a id="more"></a><br>comments    是否开启评论    true<br>tags    标签<br>categories    分类<br>permalink    url中的名字    文件名<br>动态博客中通过发布文章页面设置的各种属性，在hexo里要这样设置。</p>
+</blockquote>
+
       
 
       
@@ -199,7 +219,29 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/技术//" class="article-tag-list-link color4">/技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
 
       
 
@@ -389,6 +431,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
